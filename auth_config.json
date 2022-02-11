@@ -1,0 +1,6 @@
+{
+  "domain": "YOUR_AUTH_SERVER",
+  "clientId": "YOUR_CLIENT_ID",
+  "audience": "",
+  "scope": ""
+}
