@@ -41,6 +41,7 @@ const configureClient = async () => {
 
   auth0 = await createAuth0Client({
     domain: config.domain,
+    organization: config.organization,
     client_id: config.clientId,
     audience: config.audience,
     scope: config.scope

@@ -38,7 +38,12 @@ const parseJwt = (token) => {
     return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
   }).join(''));
 
-  return JSON.parse(jsonPayload);
+  try {
+    return JSON.parse(jsonPayload);
+  } catch (e) {
+    console.log("Error parsing JSON");
+    return {};
+  }
 };
 
 // Updates the user interface
